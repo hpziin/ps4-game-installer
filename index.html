@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080d18"><title>PS4 Web Installer</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top"><a class="brand" href="#"><span class="logo">P</span> PS4 <b>WEB INSTALLER</b></a><span class="fw">FIRMWARE 13.50</span></header>
+<main class="wrap">
+<section class="hero"><div class="eyebrow">CONSOLE WEB HUB · BUILD 0.2</div><h1>Biblioteca <span>do console.</span></h1><p>Catálogo web para PS4 com GoldHEN. Navegue pelos itens, consulte os links e abra downloads compatíveis diretamente no navegador.</p>
+<div class="pills"><span>PS4 · 13.50</span><span>GoldHEN já ativo</span><span>GitHub Pages</span></div></section>
+
+<section class="notice"><div class="notice-icon">i</div><div><b>Modo navegador independente</b><p>Este site não instala PKGs automaticamente. Sem um serviço receptor adicional no PS4, o navegador pode abrir um link de arquivo, mas não pode ordenar ao GoldHEN que instale esse arquivo.</p></div></section>
+
+<section class="toolbar"><div><div class="eyebrow">CATÁLOGO</div><h2>Seus aplicativos</h2></div><input id="search" type="search" placeholder="Pesquisar no catálogo..." aria-label="Pesquisar"></section>
+<nav id="filters" class="filters" aria-label="Categorias">
+<button class="filter active" data-filter="all">Todos</button><button class="filter" data-filter="game">Jogos</button><button class="filter" data-filter="app">Aplicativos</button><button class="filter" data-filter="dlc">DLC</button><button class="filter" data-filter="update">Updates</button>
+</nav>
+<section id="catalog" class="catalog"><div class="empty">Carregando catálogo...</div></section>
+
+<section class="panel manual"><div class="eyebrow">ABRIR UM PACOTE</div><h2>Link direto de PKG</h2><p>Se você tiver um endereço direto e confiável de um arquivo PKG, pode abri-lo pelo navegador. Isso inicia o fluxo de download disponível no navegador; não confirma instalação.</p>
+<label for="pkgUrl">Endereço HTTPS do arquivo</label><input id="pkgUrl" type="url" placeholder="https://servidor.example/aplicativo.pkg">
+<button id="openPkg" class="primary">Abrir link do PKG ↗</button><p id="manualStatus" class="small" aria-live="polite"></p></section>
+
+<section class="panel diagnostics"><div class="eyebrow">DIAGNÓSTICO</div><h2>O que está disponível</h2>
+<div class="diag"><span class="dot good"></span><div><b>Interface e catálogo</b><small>Executados pelo navegador</small></div><strong>OK</strong></div>
+<div class="diag"><span class="dot good"></span><div><b>GoldHEN</b><small>Você informou que já está ativado</small></div><strong>INFORMADO</strong></div>
+<div class="diag"><span class="dot off"></span><div><b>Controle remoto de instalação</b><small>Não há API de instalação confirmada nesta arquitetura</small></div><strong>INDISPONÍVEL</strong></div>
+<div class="diag"><span class="dot off"></span><div><b>Confirmação de instalação</b><small>O site não recebe retorno de um instalador</small></div><strong>INDISPONÍVEL</strong></div>
+</section>
+
+<footer><span>PS4 WEB INSTALLER · NÃO OFICIAL</span><span>Use somente arquivos de fontes confiáveis.</span></footer>
+</main>
+<script src="js/app.js"></script>
+</body></html>
