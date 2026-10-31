@@ -1,3 +1,11 @@
 {
-  "items": []
+  "items": [
+    {
+      "name": "Homebrew Store",
+      "type": "app",
+      "description": "O aplicativo ideal para baixar apps",
+      "cover": "https://pkg-zone.com/storage/users/lm/avatar.jpg",
+      "pkg_url": "https://pkg-zone.com/update/Store-R2.pkg"
+    }
+  ]
 }
